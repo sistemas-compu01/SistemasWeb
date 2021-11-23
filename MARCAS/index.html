@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="validar.js"></script>
+</head>
+<body>
+    <h1>Formulario de marcas</h1>
+    <form action="http://localhost/loginpw/MARCAS/marregistrar.php" method="post" class="form-register" onsubmit="return validar();">
+        <h2 class="form__titulo">Marcas</h2>
+        <div class="contenedor-inputs">
+            <input type="text" id= "nombre" name="mar_nombre" placeholder="Nombre" class="input-48" required>
+            <input type="submit" value="Registrar" class="btn-enviar" >
+        </div>
+    </form>
+</body>
+</html>
