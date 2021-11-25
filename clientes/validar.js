@@ -1,10 +1,10 @@
 function validar() {
-    var nombre, direccion, correo, telefono, rfc, dia, mes, anio;
+    var nombre, direccion, correo, telefono, RFC, dia, mes, anio;
     nombre = document.getElementById("nombre").value;
     direccion = document.getElementById("direccion").value;
     correo = document.getElementById("correo").value;
     telefono = document.getElementById("telefono").value;
-    rfc = document.getElementById("rfc").value;
+    RFC = document.getElementById("RFC").value;
     dia = document.getElementById("dia").value;
     mes = document.getElementById("mes").value;
     anio = document.getElementById("anio").value;
@@ -14,8 +14,8 @@ function validar() {
         alert("El campo FechadeNacimiento esta vacio")
         return false;
     }
-    if(nombre == "" ||  direccion == "" || correo == "" || telefono == "" || rfc == "" || 
-    fechadenacimiento == "") {
+    if(nombre === "" ||  direccion === "" || correo === "" || telefono === "" || RFC === "" || 
+    fechadenacimiento === "") {
         alert("Todos los campos estan vacios, favor de llenarlos");
         return false;
     }
@@ -43,7 +43,7 @@ function validar() {
         alert("El campo Telefono solo acepta numeros");
         return false;
     }
-    else if(rfc.length>15) {
+    else if(RFC.length>15) {
         alert("El campo RFC solo acepta 15 caracteres como maximo");
         return false;
     }
