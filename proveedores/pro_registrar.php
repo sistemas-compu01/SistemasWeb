@@ -7,7 +7,7 @@ $telefono = $_POST["telefono"];
 $RFC = $_POST["RFC"];
 
 $insertar = "INSERT INTO tblproveedores(nombre, direccion, correo, telefono, RFC) VALUES ('$nombre',
- '$direccion','$correo', '$telefono', '$RFC', )";
+ '$direccion','$correo', '$telefono', '$RFC')";
 
 
 
