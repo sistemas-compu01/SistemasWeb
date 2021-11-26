@@ -21,7 +21,7 @@ if(mysqli_num_rows($verificar_correo) > 0){
 }
 
 $verificar_RFC = mysqli_query($conexion, "SELECT * FROM  tblproveedores WHERE RFC = '$RFC'");
-if(mysqli_num_rows($verificar_usuario) > 0){
+if(mysqli_num_rows($verificar_RFC) > 0){
     echo '<script>
         alert("El RFC ya esta registrado");
         window.history.go(-1);
